@@ -1,5 +1,6 @@
 import boto3
 ddb = boto3.client("dynamodb")
+import pyjwt
 
 def login(event):
     data = event['body-json']
@@ -13,24 +14,22 @@ def login(event):
         logging.error("Validation Failed")
         raise Exception("Password must be specified.", 422)
     
-    user = loginuser(data.get('userName'), data.get('password'))
+    user = getUserIfExists(data.get('userName'), data.get('password'))
+    print(user)
+    if not user:
+        print("Incorrect userName or password")
 
     return {"message": "Successfully came in user login"}
 
-def loginuser(userName, password):
-    try:
-        ex="testcompositekey = : "+ userName
-        print(ex)
-        ey ="paasword = :"+ password
-        print(ey)
-        data = ddb.query(
-            TableName="test",
-            KeyConditionExpression=ex,
-            FilterExpression="paasword = :"+ password
-        )
-    except BaseException as e:
-        print(e)
-        raise(e)
+def getUserIfExists(userName, password):
+    dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
+    table = dynamodb.Table('test')
+    response = table.query(
+        IndexName="testcompositekey-id-index",
+        KeyConditionExpression=Key('testcompositekey').eq(userName),
+        FilterExpression=Attr('paasword').eq(password)
+    )
+    return response['Items']
     
 
 

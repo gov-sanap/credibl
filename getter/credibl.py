@@ -1,6 +1,6 @@
 import boto3
 import logging
-from getter.handlers import contentHandler,userHandler
+from handlers import contentHandler,userHandler
 
 def handler(event, context):
 

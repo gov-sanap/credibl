@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "getter/credibl.py",
         "cursor": {
-          "lineNumber": 7,
-          "column": 40
+          "lineNumber": 14,
+          "column": 21
         },
         "config": {
           "runtime": "python3.8",
@@ -57,7 +57,7 @@
         "children": [
           "314309f7-6837-45d3-8cd3-d3e59fa038f3",
           "18e4fc09-f427-4a1e-8ba9-48fd849012de",
-          "48c3439c-3c09-48c8-8b4c-80a0df4b5c1e"
+          "ec78de32-41b5-4254-a270-6d334e542546"
         ],
         "isRemovable": true,
         "filePath": "getter/handlers"
@@ -95,8 +95,8 @@
         "isRemovable": true,
         "filePath": "getter/handlers/userHandler.py",
         "cursor": {
-          "lineNumber": 14,
-          "column": 60
+          "lineNumber": 15,
+          "column": 35
         }
       },
       "732e9355-0cfd-41ab-888b-c263e886cd8e": {
@@ -119,16 +119,6 @@
         "isRemovable": true,
         "filePath": "getter/handlers/contentHandler.py"
       },
-      "48c3439c-3c09-48c8-8b4c-80a0df4b5c1e": {
-        "id": "48c3439c-3c09-48c8-8b4c-80a0df4b5c1e",
-        "parent": "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
-        "name": "__init__.py",
-        "type": "PYTHON_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "getter/handlers/__init__.py"
-      },
       "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5": {
         "id": "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5",
         "parent": "c25a5b19-f45e-4213-9ac2-32a1e178ac6c",
@@ -139,8 +129,8 @@
         "isRemovable": true,
         "filePath": "common/dynamoDB.py",
         "cursor": {
-          "lineNumber": 12,
-          "column": 48
+          "lineNumber": 2,
+          "column": 1
         }
       },
       "0d1c64ec-b8bc-49e7-a805-3c14cb744b05": {
@@ -152,34 +142,26 @@
         "children": [],
         "isRemovable": true,
         "filePath": "common/__init__.py"
+      },
+      "ec78de32-41b5-4254-a270-6d334e542546": {
+        "id": "ec78de32-41b5-4254-a270-6d334e542546",
+        "parent": "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "getter/handlers/__init__.py"
       }
     },
     "openFiles": [
       "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
       "314309f7-6837-45d3-8cd3-d3e59fa038f3",
-      "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5"
+      "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5",
+      "0d1c64ec-b8bc-49e7-a805-3c14cb744b05"
     ],
-    "currentFileId": "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
-    "resources": {
-      "ddbtest": {
-        "name": "ddbtest",
-        "type": "DynamoDB",
-        "config": {
-          "mode": 1,
-          "table": {
-            "arn": "arn:aws:dynamodb:us-east-1:162623862670:table/test",
-            "name": "test",
-            "partitionKey": "id",
-            "partitionKeyType": "S",
-            "hasSortKey": true,
-            "sortKey": "testcompositekey",
-            "sortKeyType": "S",
-            "payPerRequest": true,
-            "mode": 1
-          }
-        }
-      }
-    },
+    "currentFileId": "314309f7-6837-45d3-8cd3-d3e59fa038f3",
+    "resources": {},
     "customTemplate": {
       "overrideDefault": false,
       "dialect": null,
@@ -215,7 +197,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1592912926316
+    "lastSave": 1592914077885
   },
   "VCS_STATE": {
     "provider": "GitHub",
