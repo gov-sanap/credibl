@@ -3,16 +3,16 @@
     "allProjectFiles": {
       "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e": {
         "id": "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
-        "parent": null,
+        "parent": "ca17dbdc-9583-491c-a906-00cc85fff604",
         "name": "credibl.py",
         "type": "PYTHON_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "credibl.py",
+        "filePath": "getter/credibl.py",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 7,
+          "column": 40
         },
         "config": {
           "runtime": "python3.8",
@@ -22,14 +22,164 @@
           "layers": [],
           "name": "credibl"
         },
-        "triggers": []
+        "triggers": [],
+        "testCases": {
+          "348b3afc-9dde-488a-ac9d-49508fe2d8bd": {
+            "id": "348b3afc-9dde-488a-ac9d-49508fe2d8bd",
+            "name": "Test event",
+            "functionId": "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
+            "event": "{\r\n    \"body-json\": {\r\n        \"userName\": \"saurabh123\",\r\n        \"password\": \"cGFzc3dvcmQ=\"\r\n    },\r\n    \"params\": {\r\n        \"path\": {},\r\n        \"querystring\": {},\r\n        \"header\": {\r\n            \"Accept\": \"*/*\",\r\n            \"Accept-Encoding\": \"gzip, deflate, br\",\r\n            \"Cache-Control\": \"no-cache\",\r\n            \"Content-Type\": \"application/json\",\r\n            \"Host\": \"vzabstt599.execute-api.us-east-2.amazonaws.com\",\r\n            \"Postman-Token\": \"905fd848-60d4-4523-9af2-b5895829f405\",\r\n            \"User-Agent\": \"PostmanRuntime/7.25.0\",\r\n            \"X-Amzn-Trace-Id\": \"Root=1-5ef1c8e9-6e4e768c9dccefacade36b9c\",\r\n            \"X-Forwarded-For\": \"106.210.230.95\",\r\n            \"X-Forwarded-Port\": \"443\",\r\n            \"X-Forwarded-Proto\": \"https\"\r\n        }\r\n    },\r\n    \"stage-variables\": {},\r\n    \"context\": {\r\n        \"account-id\": \"\",\r\n        \"api-id\": \"vzabstt599\",\r\n        \"api-key\": \"\",\r\n        \"authorizer-principal-id\": \"\",\r\n        \"caller\": \"\",\r\n        \"cognito-authentication-provider\": \"\",\r\n        \"cognito-authentication-type\": \"\",\r\n        \"cognito-identity-id\": \"\",\r\n        \"cognito-identity-pool-id\": \"\",\r\n        \"http-method\": \"POST\",\r\n        \"stage\": \"prod\",\r\n        \"source-ip\": \"106.210.230.95\",\r\n        \"user\": \"\",\r\n        \"user-agent\": \"PostmanRuntime/7.25.0\",\r\n        \"user-arn\": \"\",\r\n        \"request-id\": \"f4ba0459-b1f9-43fd-bc61-e817f2bd3702\",\r\n        \"resource-id\": \"dhv3vv\",\r\n        \"resource-path\": \"/users/login\"\r\n    }\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "ca17dbdc-9583-491c-a906-00cc85fff604": {
+        "id": "ca17dbdc-9583-491c-a906-00cc85fff604",
+        "parent": null,
+        "name": "getter",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
+          "f6ed3b8b-7766-4fba-96b8-6ed65380b608",
+          "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
+          "732e9355-0cfd-41ab-888b-c263e886cd8e"
+        ],
+        "isRemovable": true,
+        "filePath": "getter"
+      },
+      "85518f5c-cf52-44da-a86f-f21d6d9c0fc5": {
+        "id": "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
+        "parent": "ca17dbdc-9583-491c-a906-00cc85fff604",
+        "name": "handlers",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "314309f7-6837-45d3-8cd3-d3e59fa038f3",
+          "18e4fc09-f427-4a1e-8ba9-48fd849012de",
+          "48c3439c-3c09-48c8-8b4c-80a0df4b5c1e"
+        ],
+        "isRemovable": true,
+        "filePath": "getter/handlers"
+      },
+      "f6ed3b8b-7766-4fba-96b8-6ed65380b608": {
+        "id": "f6ed3b8b-7766-4fba-96b8-6ed65380b608",
+        "parent": "ca17dbdc-9583-491c-a906-00cc85fff604",
+        "name": "helpers",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "getter/helpers"
+      },
+      "c25a5b19-f45e-4213-9ac2-32a1e178ac6c": {
+        "id": "c25a5b19-f45e-4213-9ac2-32a1e178ac6c",
+        "parent": null,
+        "name": "common",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5",
+          "0d1c64ec-b8bc-49e7-a805-3c14cb744b05"
+        ],
+        "isRemovable": true,
+        "filePath": "common"
+      },
+      "314309f7-6837-45d3-8cd3-d3e59fa038f3": {
+        "id": "314309f7-6837-45d3-8cd3-d3e59fa038f3",
+        "parent": "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
+        "name": "userHandler.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "getter/handlers/userHandler.py",
+        "cursor": {
+          "lineNumber": 14,
+          "column": 60
+        }
+      },
+      "732e9355-0cfd-41ab-888b-c263e886cd8e": {
+        "id": "732e9355-0cfd-41ab-888b-c263e886cd8e",
+        "parent": "ca17dbdc-9583-491c-a906-00cc85fff604",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "getter/__init__.py"
+      },
+      "18e4fc09-f427-4a1e-8ba9-48fd849012de": {
+        "id": "18e4fc09-f427-4a1e-8ba9-48fd849012de",
+        "parent": "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
+        "name": "contentHandler.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "getter/handlers/contentHandler.py"
+      },
+      "48c3439c-3c09-48c8-8b4c-80a0df4b5c1e": {
+        "id": "48c3439c-3c09-48c8-8b4c-80a0df4b5c1e",
+        "parent": "85518f5c-cf52-44da-a86f-f21d6d9c0fc5",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "getter/handlers/__init__.py"
+      },
+      "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5": {
+        "id": "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5",
+        "parent": "c25a5b19-f45e-4213-9ac2-32a1e178ac6c",
+        "name": "dynamoDB.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "common/dynamoDB.py",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 48
+        }
+      },
+      "0d1c64ec-b8bc-49e7-a805-3c14cb744b05": {
+        "id": "0d1c64ec-b8bc-49e7-a805-3c14cb744b05",
+        "parent": "c25a5b19-f45e-4213-9ac2-32a1e178ac6c",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "common/__init__.py"
       }
     },
     "openFiles": [
-      "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e"
+      "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
+      "314309f7-6837-45d3-8cd3-d3e59fa038f3",
+      "ddbb6b4e-6fdf-4c07-9f66-13e4cd0350f5"
     ],
     "currentFileId": "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
-    "resources": {},
+    "resources": {
+      "ddbtest": {
+        "name": "ddbtest",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:162623862670:table/test",
+            "name": "test",
+            "partitionKey": "id",
+            "partitionKeyType": "S",
+            "hasSortKey": true,
+            "sortKey": "testcompositekey",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1
+          }
+        }
+      }
+    },
     "customTemplate": {
       "overrideDefault": false,
       "dialect": null,
@@ -46,7 +196,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -57,7 +215,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1592902902015
+    "lastSave": 1592912926316
   },
   "VCS_STATE": {
     "provider": "GitHub",
