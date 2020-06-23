@@ -1,0 +1,69 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e": {
+        "id": "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
+        "parent": null,
+        "name": "credibl.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "credibl.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "credibl"
+        },
+        "triggers": []
+      }
+    },
+    "openFiles": [
+      "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e"
+    ],
+    "currentFileId": "06a3565c-7d18-4ecb-bc66-575b2b4cbe8e",
+    "resources": {},
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "credibl",
+    "projectDescription": "credibility",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1592902902015
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "credibl",
+      "url": "https://github.com/gov-sanap/credibl"
+    }
+  }
+}
